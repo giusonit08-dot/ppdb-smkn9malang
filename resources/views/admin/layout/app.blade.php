@@ -39,16 +39,7 @@
       @include('admin.layout.sidebar')
     {{--end sidebar--}}
       <!-- Main Content -->
-      <div class="main-content">
-        <section class="section">
-          <div class="section-header">
-            <h1>Blank Page</h1>
-          </div>
-
-          <div class="section-body">
-          </div>
-        </section>
-      </div>
+      @yield('content')
       <footer class="main-footer">
         {{--end main content--}}
         {{--footer--}}
