@@ -2,7 +2,7 @@
 
 use Faker\Guesser\Name;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\SekolahController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -34,3 +34,5 @@ Route::get('/pendaftaran', function () {
 Route::get('/user', function () {
     return view('admin.pages.user.index');
 })->name('user');
+
+Route::resource('sekolah', SekolahController::class);

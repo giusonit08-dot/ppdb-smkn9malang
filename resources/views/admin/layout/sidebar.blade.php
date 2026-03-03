@@ -24,6 +24,8 @@
             <li class="{{ request()->routeIs('pendaftaran') ? 'active' : '' }}">
               <a href="{{ route('pendaftaran') }}" class="nav-link"><i class="far fa-file-alt"></i> <span>Pendaftaran</span></a></li>
            
+            <li class="{{ request()->routeIs('sekolah.*') ? 'active' : '' }}">
+              <a href="{{ route('sekolah.index') }}" class="nav-link"><i class="far fa-file-alt"></i> <span>Sekolah</span></a></li>
          
           <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
             <a href="https://getstisla.com/docs" >
